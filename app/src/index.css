@@ -1,0 +1,37 @@
+* {
+    user-select: none;
+}
+
+.app {
+    width: 830px;
+}
+
+.box {
+    width: 830px;
+    height: 620px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+.box > div {
+    flex-shrink: 0;
+    width: 62px;
+    height: 62px;
+    border: 3px solid #6A6A6A;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+
+.SelectBox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 1px dashed #eee !important;
+    background-color: #aaa;
+    z-index: 1000;
+    opacity: 0.6;
+    border-radius: 0 !important;
+}
